@@ -1,0 +1,266 @@
+body{
+	background-color: #f4f4f4;
+	margin: 0;
+	line-height: 1.8em;
+}
+
+#mainHeader{
+	background-color: coral;
+	color: White;
+	font-size: 30px;
+}
+
+#mainHead{
+	line-height: 0.8em;
+	padding-left: 20px;
+}
+
+#logo{
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+#mainHeader img{
+	height: 100px;
+	padding-right: 10px;
+}
+
+#mainFooter{
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+.container{
+	display: flex;
+	margin: auto;
+	overflow: hidden;
+	align-items: center;
+}
+
+#navbar{
+	position: sticky;
+  	top: 0px;
+	background-color: #333;
+	color: #fff;
+	z-index: 100;
+}
+
+#navi{
+	width: 80%;
+}
+
+#navbar li{
+	display: inline-block;
+}
+
+#navbar ul{
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#navbar a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#navbar a:hover{
+	color: black;
+}
+
+.button{
+	padding: 20px;
+}
+
+.button:hover{
+	background-color: white;
+}
+
+#showcase{
+	background-image: url("../images/showcase.jpg");
+	line-height: 2em;
+	text-align: center;
+	height: 200px;
+	background-position: center;
+}
+
+#showcase .container{
+	justify-content: center;
+}
+
+#showcase h1{
+	color: white;
+	font-size: 40px;
+	padding-top: 60px;
+}
+
+.SecHead1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #555;
+}
+
+.box{
+	display: flex;
+	align-items: center;
+}
+
+.SecBody1{
+	width: 70%;
+	box-sizing: border-box;
+	padding: 30px;
+	font-size: 30px;
+	position: relative;
+	animation-name: intro;
+	animation-duration: 2s;
+}
+
+#bio{
+	color: white;
+	background-color: #333;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 20px;
+	font-size: 25px;
+	position: relative;
+	animation-name: bio;
+	animation-duration: 1s;
+}
+
+.jt{
+	color: #ff3;
+	overflow-wrap: break-word;
+}
+
+#bio ul{
+	padding: 0;
+	list-style: none;
+}
+
+#Education{
+	display: block;
+}
+
+#edu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ed, .ed1{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+.ed{
+	left: -110%;
+	animation-name: Edim;
+	animation-duration: 3s;
+}
+
+.ed1{
+	right: -110%;
+	animation-name: Edim1;
+	animation-duration: 3s;
+}
+
+.ed img{
+	border: 5px solid black;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.ed1 img{
+	border: 5px solid black;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.SecHead2{
+	color: #fff;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 50px;
+	text-align: center;
+
+}
+
+.SecBody2{
+	box-sizing: border-box;
+	padding: 30px;
+	font-size: 30px;
+	color: #fff;
+	background-color: #555;
+}
+
+.second{
+	overflow: hidden;
+	background-color: #555;
+}
+
+.SecBody3{
+	box-sizing: border-box;
+	padding: 30px;
+	font-size: 30px;
+	text-align: center;	
+}
+
+#Work{
+	display: block;
+}
+
+.vid{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.workVid{
+	border: 5px solid black;
+	width: 200px;
+	text-decoration: none;
+	color: black;
+}
+
+.workVid img{
+	border-color: black;
+	width: 200px;
+}
+
+#Contact{
+	display: block;
+}
+
+.socmed{
+	text-decoration: none;
+	color: rgb(40, 40, 190);
+}
+
+@keyframes Edim{
+	0% {left: -100%;}
+	100% {left: 0px;}
+}
+
+@keyframes Edim1{
+	0% {right: -100%;}
+	100% {right: 0px;}
+}
+
+@keyframes intro{
+	0% {left: -100%;}
+	100% {left: 0px;}
+}
+
+@keyframes bio{
+	0% {right: -100%;}
+	100% {right: 0px;}
+}
